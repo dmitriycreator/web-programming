@@ -1,0 +1,61 @@
+body {
+    font-family: "Berlin Sans FB", serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    background-color: black;
+    display: block;
+    color: white;
+}
+
+.form {
+    max-width: 500px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+
+    font-family: "Berlin Sans FB", serif;
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+
+    border: 0;
+    background-color: black;
+    cursor: pointer;
+
+    font-family: "Berlin Sans FB", serif;
+    font-size: 16px;
+    color: white;
+}
+
+.check {
+    position: absolute;
+}
+
+img {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
