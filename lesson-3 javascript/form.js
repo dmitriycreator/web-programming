@@ -21,5 +21,6 @@ function validate()
         document.getElementById("password-text").innerText = '*password cannot be less than 4 symbols';
         check = false;
     }
+    console.log("Finished");
     return check;
 }
