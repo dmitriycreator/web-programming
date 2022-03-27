@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
 </head>
 <body>
     <div class="top">
@@ -15,13 +16,19 @@
             <a href="Text.html"><img src="logo.png" alt="Mesa Anpo"></a>
         </label>
     </div>
-    <form class="form" action="" method="post">
+    <form class="form" onsubmit="return validate()">
 
-        <label>
-            <input class="input" type="text" placeholder="Login">
+        <label id="label_login">
+            login
         </label>
         <label>
-            <input class="input" type="password" placeholder="Password">
+            <input class="input" id="login" type="text" placeholder="Login">
+        </label>
+        <label id="label_password">
+            password
+        </label>
+        <label>
+            <input class="input" id="password" type="password" placeholder="Password">
         </label>
         <button class="btn" type="submit">Continue</button>
     </form>
