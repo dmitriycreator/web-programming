@@ -1,15 +1,27 @@
 import { ASTEROID_SHOW_MODE_DANGEROUS } from "../Constants/Constants_list"
 import { AsteroidCard } from "../Asteroid_card/AsteroidCard";
+import { useContext } from "react";
+import { AsteroidsContext } from "../App";
 
 export const AsteroidCardList = (props) => {
-    const {list, showParams} = props;
+    const {list} = props;
+    const {state, dispatch} = useContext(AsteroidsContext)
+
+
     let showList = list;
 
-    if (showParams.showMode === ASTEROID_SHOW_MODE_DANGEROUS) {
-        showList = showList.filter((item) => item.grade === "опасен")
+    if(state.showMode === ASTEROID_SHOW_MODE_DANGEROUS){
+        showList = showList.filter((item)=>item.grade==="опасен")
     }
 
-    return showList.map(
-        (item) => <AsteroidCard name={item.name} grade={item.grade} date={item.date}
-                                distance={item.distance} size={item.size} distanceMode={showParams.distanceMode}/>)
+    console.log(useContext(AsteroidsContext))
+
+    if(list.length === 0){
+        return <div>List is empty</div>
+    }
+    else{
+        return showList.map(
+            (item)=><AsteroidCard name={item.name} grade={item.grade} date={item.date}
+                                  distance={item.distance} size={item.size}/>)
+    }
 }
