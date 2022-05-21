@@ -1,8 +1,11 @@
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {Switch} from "react-router-dom";
-import { Home_page } from "./Home_page/Home_page.jsx";
+import { Home } from "./Home_page/Home_page.jsx";
 //import './App.css';
 function App() {
+    let promise = new Promise(function(resolve, reject){
+        setTimeout(()=>resolve("done"), 1000)
+    })
   return (
     <Router>
         <div>
@@ -14,7 +17,7 @@ function App() {
         <main>
             <Switch>
                 <Route path={"/Home"}>
-                    <Home_page />
+                    <Home />
                 </Route>
                 <Route path={"/Destroy"}>
                     <label>destroy</label>
