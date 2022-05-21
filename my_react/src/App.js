@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import { card } from './Asteroid_card/card';
 
 function App() {
   return (

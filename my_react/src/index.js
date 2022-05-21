@@ -4,22 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-class Welcome extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <h1>Hello, React!</h1>
-            </div>
-        )
-    }
-}
-function Hello() {
-    return <h1>Hello, React!</h1>;
-}
-
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
