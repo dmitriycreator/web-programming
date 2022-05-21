@@ -1,15 +1,15 @@
-.homeHeader{
+.homeHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 920px;
 }
 
-.title{
+.title {
     width: 40%;
 }
 
-.name{
+.name {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
@@ -21,7 +21,7 @@
     white-space: nowrap;
 }
 
-.description{
+.description {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
@@ -32,12 +32,12 @@
 }
 
 
-@media(max-width: 920px){
-    .title{
+@media (max-width: 920px) {
+    .title {
         width: 100%;
     }
 
-    .homeHeader{
+    .homeHeader {
         width: 100%;
         flex-direction: column;
     }

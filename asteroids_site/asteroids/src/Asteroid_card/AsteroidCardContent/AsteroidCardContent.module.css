@@ -1,4 +1,4 @@
-.contentName{
+.contentName {
     position: absolute;
     width: 11%;
     height: 16%;
@@ -17,7 +17,7 @@
 }
 
 
-.contentWrapper{
+.contentWrapper {
     position: absolute;
     width: 31.4%;
     height: 44%;
@@ -25,45 +25,45 @@
     top: 36%;
 }
 
-.contentDate{
+.contentDate {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding: 0px;
-    
+
     position: static;
     width: 100%;
     height: 27.27%;
     left: 0px;
     top: 0px;
-    
-    
+
+
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
 }
 
-.contentDistance{
+.contentDistance {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding: 0px;
-    
+
     position: static;
     width: 100%;
     height: 27.27%;
     left: 0px;
     top: 36.36%;
-    
-    
+
+
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 0px 0px;
 }
 
-.contentSize{
+.contentSize {
     /* Desktop Main Menu Item */
 
     /* Auto layout */
@@ -88,8 +88,8 @@
     margin: 8px 0px;
 }
 
-@media(max-width:920px){
-    .contentName{
+@media (max-width: 920px) {
+    .contentName {
         /* 2021 FQ */
 
         position: absolute;
@@ -110,7 +110,7 @@
         color: #000000;
     }
 
-    .contentWrapper{
+    .contentWrapper {
         /* Frame 2 */
 
 
@@ -128,7 +128,7 @@
         top: 161px;
     }
 
-    .contentDate{
+    .contentDate {
         /* Desktop Main Menu Item */
 
 
@@ -154,7 +154,7 @@
         margin: 8px 0px;
     }
 
-    .contentDistance{
+    .contentDistance {
         /* Desktop Main Menu Item */
 
 
@@ -180,7 +180,7 @@
         margin: 0px 0px;
     }
 
-    .contentSize{
+    .contentSize {
         /* Desktop Main Menu Item */
 
 
